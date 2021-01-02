@@ -1,0 +1,49 @@
+ body {
+	background-color: black;
+	background-image: url('Skyler last (1).JPG');
+	background-size: cover;
+	background-repeat: no-repeat;
+ }
+ 
+ h1 {
+	 
+	 top: 50%;
+	 margin: 0;
+	 position: absolute;
+	 text-align: center;
+	 color: green;
+	 font-size: 80px;
+ }
+ 
+ a {
+	 top: 57%;
+	 position: absolute;
+	 color: #A434EB;
+	 font-size: 30px;
+ }
+  input[type=text],select {
+	 
+	 top: 50%;
+	 text-align: center;
+	 position: absolute;
+	 height: 5%;
+	 font-size: 40px;
+	 background-color: black;
+	 padding: 0px 0px;
+	 color: #A434EB;
+	 width: 30%;
+	 margin-left: 60%;
+	 margin-right: 10%;
+ }
+ 
+ .left{
+	 width: 45%;
+	 margin-left: 10%;
+	 margin-right: 2.5%;
+ }
+ 
+ .right{
+	 width: 55%;
+	 margin-left: 74%;
+	 margin-right: 10%;
+ }

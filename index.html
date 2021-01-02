@@ -2,20 +2,40 @@
 <link rel="stylesheet" href="StyleSheet.css">
 <html>
 
- <style>
- body {
-	background-image: url('Skyler last (1).JPG');
-	background-size: cover;
-	background-repeat: no-repeat;
- }
- </style>
-
 <title>WHO AM I?</title>
 
 <body>
-	<center>
-	<h1>A cutie pie</h1>
-	</center>
+	<div class="left">
+		<h1>
+			What is my name?
+		</h1>
+	</div>
+	<div class="right>
+		<form action="">
+			<input type="text" id="passText" name="pass" onchange="textChange()">
+		</form><br/>
+		<div class="right">
+			<a href="https://www.youtube.com" id="linkID"></a>
+		</div>
+	</div>
+	
+	<script>
+		function textChange() {
+			var link = document.getElementById("linkID");
+			var inp = document.getElementById("passText");
+			if(String(inp.value).toLowerCase() == "whoami?")
+			{
+				link.innerHTML = "Music";
+			}
+			else
+			{
+				link.innerHTML = "";
+			}
+			
+			
+		}
+	</script>
+	
 </body>
 
 </html>
