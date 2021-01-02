@@ -5,45 +5,48 @@
 	background-repeat: no-repeat;
  }
  
+ @font-face {
+	 font-family: NiagaraSolid;
+	 src: url('NIAGSOL.TTF');
+ }
+ 
  h1 {
 	 
-	 top: 50%;
-	 margin: 0;
+	 font-family: NiagaraSolid;
 	 position: absolute;
 	 text-align: center;
 	 color: green;
-	 font-size: 80px;
+	 font-size: 10vh;
  }
  
  a {
-	 top: 57%;
 	 position: absolute;
 	 color: #A434EB;
 	 font-size: 30px;
  }
   input[type=text],select {
 	 
-	 top: 50%;
 	 text-align: center;
+	 font-family: NiagaraSolid;
 	 position: absolute;
-	 height: 5%;
-	 font-size: 40px;
+	 height: 10vh;
+	 font-size: 100px;
 	 background-color: black;
 	 padding: 0px 0px;
 	 color: #A434EB;
-	 width: 30%;
-	 margin-left: 60%;
-	 margin-right: 10%;
+	 width: 80%;
  }
  
  .left{
-	 width: 45%;
+	 width: 50%;
 	 margin-left: 10%;
-	 margin-right: 2.5%;
+	 margin-right: 0%;
  }
  
  .right{
-	 width: 55%;
-	 margin-left: 74%;
-	 margin-right: 10%;
+	 width: 40%;
+	 top: 7.5%;
+	 position: absolute;
+	 margin-left: 60%;
+	 margin-right: 0%;
  }
