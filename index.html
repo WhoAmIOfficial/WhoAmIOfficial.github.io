@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="StyleSheet.css">
+<title>WHO AM I?</title>
 <html>
 
-<title>WHO AM I?</title>
 
 <body>
 
     <div class="row">
-        <span>
-            <div class="column">
-                <h1>WHO AM I?</h1>
-            </div>
-            <div class="column">
-                <h1></h1>
-            </div>
 
-        </span>
+        <div class="column">
+            <h1>WHAT IS MY NAME?</h1>
+        </div>
+
+        <div class="column" style="padding-top:3%;">
+            <div class="row">
+
+                <div style="padding-left: 15%;">
+                    <input id="TheInput" maxlength="7" onchange="OnChanged()"/>
+                </div>
+                <div id="TheLink" style="margin-left: 15%; margin-top: 20px; font-size: 25px; display:none">
+                    <a href="https://youtube.com" target="_blank">WhoAmIOfficial</a>
+
+                </div>
+
+            </div>
+        </div>
+
 
     </div>
+
+    <script>
+        function OnChanged() {
+            console.log("Worked");
+            if (document.getElementById("TheInput").value == "WHOAMI?") {
+                document.getElementById("TheLink").style.display = "block";
+            }
+
+                }
+    </script>
 
 </body>
 

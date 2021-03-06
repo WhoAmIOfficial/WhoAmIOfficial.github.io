@@ -1,32 +1,64 @@
- body {
-	background-color: black;
-	background-image: url("Skyler last (1).JPG");
-	background-size: cover;
-	background-repeat: no-repeat;
- }
- 
- @font-face {
-	 font-family: NiagaraSolid;
-	 src: url('NIAGSOL.TTF');
- }
- 
- h1 {
-	 
-	 font-family: NiagaraSolid;
-	 text-align: center;
-	 color: green;
-	 font-size: 10vh;
- }
-
-.column {
-	float: left;
-	width: 50%;
-	margin-top: 15%;
+body {
+    background-color: black;
+    background-image: url("Skyler last (1).JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* Clear floats after the columns */
+@font-face {
+    font-family: NiagaraSolid;
+    src: url('NIAGSOL.TTF');
+}
+
+h1 {
+    font-family: NiagaraSolid;
+    text-align: center;
+    color: green;
+    font-size: 100px;
+}
+/*
+$char-w: 1ch;
+$gap: .5*$char-w;
+$n-char: 7;
+$in-w: $n-char*($char-w + $gap);*/
+
+:root {
+    --charW: 1ch;
+    --gap: 0.5ch;
+    --nChar: 7;
+    --inW: calc (7 * 0.5ch);
+}
+
+input {
+    display: block;
+    text-align: center;
+    border: none;
+    padding: 0;
+    font-size: 80px;
+    width: var(--inW);
+    background-color: transparent;
+    font-family: NiagaraSolid;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5ch;
+    color: green;
+    border-bottom: solid 2px;
+}
+
+    input:focus {
+        border-bottom: solid 2px;
+        outline: none;
+    }
+
+.column {
+    float: left;
+    width: 50%;
+    align-content: center;
+    margin-top: 15%;
+}
+
 .row:after {
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
