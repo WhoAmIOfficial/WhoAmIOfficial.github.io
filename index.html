@@ -31,9 +31,12 @@
 
     <script>
         function OnChanged() {
-            console.log("Worked");
-            if (document.getElementById("TheInput").value == "WHOAMI?") {
+            //console.log(document.getElementById("TheInput").value.toUpperCase());
+            if (document.getElementById("TheInput").value.toUpperCase() == "WHOAMI?") {
                 document.getElementById("TheLink").style.display = "block";
+            }
+            else {
+                document.getElementById("TheLink").style.display = "none";
             }
 
                 }
