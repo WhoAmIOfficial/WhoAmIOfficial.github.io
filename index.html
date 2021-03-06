@@ -5,39 +5,20 @@
 <title>WHO AM I?</title>
 
 <body>
-	<div class="left">
-		<h1>
-			What is my name?
-		</h1>
-	</div>
-	
-	<form action="">
-		<div class="right">
-			<input type="text" id="passText" name="pass" onchange="textChange()">
-		</div>
-	</form><br/>
-	
-	<div class="right>
-		<a href="https://www.youtube.com" id="linkID"></a>
-	</div>
-	
-	<script>
-		function textChange() {
-			var link = document.getElementById("linkID");
-			var inp = document.getElementById("passText");
-			if(String(inp.value).toLowerCase() == "whoami?")
-			{
-				link.innerHTML = "Music";
-			}
-			else
-			{
-				link.innerHTML = "";
-			}
-			
-			
-		}
-	</script>
-	
+
+    <div class="row">
+        <span>
+            <div class="column">
+                <h1>WHO AM I?</h1>
+            </div>
+            <div class="column">
+                <h1></h1>
+            </div>
+
+        </span>
+
+    </div>
+
 </body>
 
 </html>

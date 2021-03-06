@@ -13,40 +13,20 @@
  h1 {
 	 
 	 font-family: NiagaraSolid;
-	 position: absolute;
 	 text-align: center;
 	 color: green;
 	 font-size: 10vh;
  }
- 
- a {
-	 position: absolute;
-	 color: #A434EB;
-	 font-size: 30px;
- }
-  input[type=text],select {
-	 
-	 text-align: center;
-	 font-family: NiagaraSolid;
-	 position: absolute;
-	 height: 10vh;
-	 font-size: 100px;
-	 background-color: black;
-	 padding: 0px 0px;
-	 color: #A434EB;
-	 width: 80%;
- }
- 
- .left{
-	 width: 50%;
-	 margin-left: 10%;
-	 margin-right: 0%;
- }
- 
- .right{
-	 width: 40%;
-	 top: 7.5%;
-	 position: absolute;
-	 margin-left: 60%;
-	 margin-right: 0%;
- }
+
+.column {
+	float: left;
+	width: 50%;
+	margin-top: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
