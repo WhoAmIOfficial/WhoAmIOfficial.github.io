@@ -17,13 +17,6 @@ h1 {
     font-size: 100px;
 }
 
-:root {
-    --charW: 1ch;
-    --gap: 0.5ch;
-    --nChar: 7;
-    --inW: calc (7 * 0.5ch);
-}
-
 input {
     display: block;
     text-align: center;
@@ -40,10 +33,10 @@ input {
     border-bottom: solid 2px;
 }
 
-    input:focus {
-        border-bottom: solid 2px;
-        outline: none;
-    }
+input:focus {
+    border-bottom: solid 2px;
+    outline: none;
+}
 
 .column {
     float: left;
